@@ -1,7 +1,6 @@
 #include "jit.hpp"
 #include <vector>
 
-#include "dnnl_kernels.hpp"
 
 #if !defined(XBYAK64_GCC)
 #error NOT SUPPORTED

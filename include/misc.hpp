@@ -300,7 +300,7 @@ void clflush(void* pv, int bytes) {
     _mm_mfence();
 };
 
-template<int hint = _MM_HINT_T2>
+template<_mm_hint hint = _MM_HINT_T2>
 void sw_prefetch_L2(void* pv, int bytes) {
     auto* p = reinterpret_cast<uint8_t*>(pv);
     int i;
